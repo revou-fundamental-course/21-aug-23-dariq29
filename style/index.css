@@ -1,0 +1,188 @@
+*,
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background-color: darkgray;
+    padding: 10px 20px;
+    border: 1px solid #333;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo img {
+    width: auto;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar .menu {
+    gap: 4px;
+    display: flex;
+}
+
+.navbar .menu button {
+    padding: 5px 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s background-color ease-out;
+
+}
+
+.menu button a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+
+.navbar .menu button:hover {
+    background-color: white;
+}
+
+
+/* Home */
+.home {
+    border: 1px solid #333;
+    padding: 15px;
+    background-color: darkgray;
+}
+
+.inputName{
+    color: #333;
+    font-weight: 700;
+    padding: 2px 5px;
+    border: 1px solid black;
+}
+
+.btnSubmit{
+    color: #333;
+    padding: 2px 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: 0.3s background-color ease-out;
+}
+
+.btnSubmit:hover{
+    background-color: white;
+    cursor: pointer;
+}
+.paragraph{
+    font-weight: 300;
+}
+
+.header {
+    padding: 7px;
+    margin: 10px;
+}
+
+.baner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-slideshow {
+    width: 50%;
+    height: auto;
+}
+
+.btn {
+    flex-direction: row;
+    margin-top: 2px;
+}
+
+.btn-previous {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.btn-next {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/* my Hobie */
+.ekskul {
+    border: 1px solid #333;
+    background-color: darkgray;
+}
+
+.img {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    gap: 20px;
+}
+
+.img h4 {
+    flex-direction: column;
+}
+
+/* Massage Us */
+.massagesUs{
+    background-color: darkgray;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+
+.massageSubmit {
+    flex: 1;
+    padding: 20px;
+}
+
+
+.MassageContent {
+    flex: 1;
+    padding: 20px;
+    background-color: #e0e0e0;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .menu {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .img-slideshow {
+        width: 100%;
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .massageSubmit .MassageContent {
+        flex: none;
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo RevoU.svg" alt="gambar logo">
+            <h1>My School</h1>
+        </div>
+        <div class="menu">
+            <button>
+                <a href="#Home"><b>Home</b></a>
+            </button>
+            <button>
+                <a href="profil.html"><b>Our Profile</b></a>
+            </button>
+            <button>
+                <a href="#ekskul"><b>Extracurricular</b></a>
+            </button>
+            <button>
+                <a href="#massageUs"><b>Message Us</b></a>
+            </button>
+        </div>
+    </div>
+    <!-- home -->
+    <div class="home" id="Home">
+        <div class="header">
+            <form name="welcome-name" onsubmit="return welcomeName()">
+                <input class="inputName" type="text" placeholder="Masukan Nama Anda!!" id="name-input" name="name-input">
+                <button class="btnSubmit" id="submit" type="submit">Submit</button>
+                <p id="error-name"></p>
+            </form>
+
+            <h1>Hi,<span id="nama"></span> Welcome to my Website</h1>
+            <p class="paragraph">Ini Adalah Website Sekolah buatan Saya dengan menggunakan HTML,CSS, dan sedikit JavaScipt</p>
+        </div>
+        <div class="baner">
+            <img class="img-slideshow" src="gambar1.jpg" alt="gambar1">
+            <img class="img-slideshow" src="gambar2.jpg" alt="gambar2">
+            <img class="img-slideshow" src="gambar3.jpg" alt="gambar3">
+
+            <div class="btn">
+                <button class="btn-previous" onclick="plusDivs(-1)">Previous</button>
+                <button class="btn-next" onclick="plusDivs(1)">Next</button>
+            </div>
+        </div>
+    </div>
+<!-- Extracurricular -->
+    <div class="ekskul" id="ekskul">
+        <h1>Extracurricular</h1>
+        <div class="img">
+            <div>
+                <img width="70px" src="badminton.svg" alt="badminton">
+                <h4>BADMINTON</h4>
+            </div>
+            <div>
+                <img width="70px" src="Footbal.svg" alt="fotball">
+                <h4>FOOTBALL</h4>
+            </div>
+            <div>
+                <img width="70px" src="TaekWondo.svg" alt="Reading">
+                <H4>TAE KWON DO</H4>
+            </div>
+        </div>
+    </div>
+    <!-- massage Us -->
+    <div id="massageUs" class="massagesUs">
+        <h1>Massage Us</h1>
+        <div class="container">
+            <div class="massageSubmit">
+                <form name="message-form" onsubmit="return validateForm()">
+                    Nama: <input placeholder="Nama" type="text" name="full-name"><br>
+                    Tanggal Lahir: <input type="date" name="birth-date"><br>
+                    Jenis Kelamin :
+                    <input type="radio" id="male" name="gender" value="Laki-Laki">
+                    <label for="male">Laki - Laki</label>
+                    <input type="radio" id="female" name="gender" value="Perempuan">
+                    <label for="female">Perempuan</label><br>
+                    Pesan : <textarea placeholder="pesan" name="messages"></textarea><br>
+                    <input type="submit" value="submit">
+                </form>
+            </div>
+            <div class="MassageContent">
+                <p>Nama : <span id="sender-full-name"></span></p>
+                <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
+                <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+                <p>Pesan : <span id="sender-messages"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
